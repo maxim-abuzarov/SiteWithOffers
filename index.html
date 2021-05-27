@@ -423,14 +423,216 @@
                 </a>
 <!--X ITEM X-->
                 <button class="show-more">
-                    <img src="/assets/img/plus.svg" alt="show more">
+                    <img src="assets/img/plus.svg" alt="show more">
                     Показать еще
                 </button>
                 
             </main>
 
             <aside class="aside">
+                <form>
+<!--- WIDGET --->
+                    <div class="widget">
 
+                        <div class="widget__title">
+                            Близость к метро
+                        </div>
+
+                        <div class="widget__body">
+
+                            <div class="location">
+
+                                <div class="location__row">
+                                    
+                                    <input type="checkbox" id="loc-1" checked class="location__checkbox">
+                                    <label class="location__btn" for='loc-1' >&lt;10</label>
+
+                                    <input type="checkbox" id="loc-2" class="location__checkbox">
+                                    <label class="location__btn" for='loc-2' >10-20</label>
+
+                                    <input type="checkbox" id="loc-3" class="location__checkbox">
+                                    <label class="location__btn" for='loc-3' >20-30</label>
+
+                                    <input type="checkbox" id="loc-4" class="location__checkbox">
+                                    <label class="location__btn" for='loc-4' >30+</label>
+
+                                </div>
+
+                                <div class="location__row">
+
+                                    <input type="checkbox" id="loc-5" class="location__checkbox">
+                                    <label class="location__btn" for='loc-5' >Любая</label>
+
+                                </div>
+
+                            </div>
+
+                        </div> <!-- /.widget__body -->
+
+                    </div> <!-- /.widget -->
+<!--X WIDGET X-->
+<!--- WIDGET --->
+                    <div class="widget">
+
+                        <div class="widget__title">
+                            Срок сдачи
+                        </div>
+
+                        <div class="widget__body">
+
+                            <label class="radio">
+
+                                <input type="radio" class="radio__real" name="term" checked>
+                                <span class="radio__fake"></span>
+                                <span class="radio__title">Любой</span>
+
+                            </label>
+
+                            <label class="radio">
+
+                                <input type="radio" class="radio__real" name="term">
+                                <span class="radio__fake"></span>
+                                <span class="radio__title">Сдан</span>
+
+                            </label>
+
+                            <label class="radio">
+
+                                <input type="radio" class="radio__real" name="term">
+                                <span class="radio__fake"></span>
+                                <span class="radio__title">В этом году</span>
+
+                            </label>
+
+                            <label class="radio">
+
+                                <input type="radio" class="radio__real" name="term">
+                                <span class="radio__fake"></span>
+                                <span class="radio__title">В следующем году</span>
+
+                            </label>
+
+                        </div> <!-- /.widged__body -->
+
+                    </div> <!-- /.widget -->
+<!--X WIDGET X-->
+<!--- WIDGET --->
+                    <div class="widget">
+
+                        <div class="widget__title">
+                            Дополнительные опции
+                        </div>
+
+                        <div class="widget__body">
+
+                            <label class="checkbox">
+
+                                <input type="checkbox" class="checkbox__real" name="value-01">
+                                <span class="checkbox__fake"></span>
+                                <span class="checkbox__title">Двор без машин</span>
+
+                            </label>
+
+                            <label class="checkbox">
+
+                                <input type="checkbox" class="checkbox__real" name="value-02">
+                                <span class="checkbox__fake"></span>
+                                <span class="checkbox__title">Высокие потолки</span>
+
+                            </label>
+
+                            <label class="checkbox">
+
+                                <input type="checkbox" class="checkbox__real" name="value-03">
+                                <span class="checkbox__fake"></span>
+                                <span class="checkbox__title">Панорамные окна</span>
+
+                            </label>
+
+                            <label class="checkbox">
+
+                                <input type="checkbox" class="checkbox__real" name="value-04">
+                                <span class="checkbox__fake"></span>
+                                <span class="checkbox__title">Есть кладовые</span>
+
+                            </label>
+
+                            <label class="checkbox">
+
+                                <input type="checkbox" class="checkbox__real" name="value-05">
+                                <span class="checkbox__fake"></span>
+                                <span class="checkbox__title">Малоэтажный</span>
+
+                            </label>
+
+                            <div class="widget__hidden">
+
+                                <label class="checkbox">
+
+                                    <input type="checkbox" class="checkbox__real" name="value-06">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__title">Тихие соседи</span>
+        
+                                </label>
+        
+                                <label class="checkbox">
+        
+                                    <input type="checkbox" class="checkbox__real" name="value-07">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__title">Шумоизоляция</span>
+        
+                                </label>
+        
+                                <label class="checkbox">
+        
+                                    <input type="checkbox" class="checkbox__real" name="value-08">
+                                    <span class="checkbox__fake"></span>
+                                    <span class="checkbox__title">Подземная парковка</span>
+        
+                                </label>
+
+                            </div> <!-- /.widget__hidden-->
+
+                            <button class="widget__show-hidden">Показать еще</button>
+
+                        </div> <!-- /.widged__body -->
+
+                    </div> <!-- /.widget -->
+<!--X WIDGET X-->
+<!--- WIDGET --->
+                    <div class="widget">
+
+                        <div class="widget__body">
+
+                            <label class="toggle">
+
+                                <input type="checkbox" class="toggle__real" name="comission">
+                                <span class="toggle__fake"></span>
+                                <span class="toggle__title">Услуги 0%</span>
+
+                            </label>
+
+                        </div> <!-- /.widged__body -->
+
+                    </div> <!-- /.widget -->
+<!--X WIDGET X-->
+<!--- WIDGET --->
+                    <div class="widget">
+
+                        <div class="widget__body">
+
+                            <button class="form-btn form-btn--submit">Применить фильтры</button>
+                            <button class="form-btn">
+                                <img src="/assets/img/x.svg" alt="сбросить фильтры">
+                                <span>Сбросить фильтры</span>
+                            </button>
+
+
+                        </div> <!-- /.widged__body -->
+
+                    </div> <!-- /.widget -->
+<!--X WIDGET X-->
+                </form>
             </aside>
 
         </div> <!-- .row -->
