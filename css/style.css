@@ -17,9 +17,9 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 80px 15px;
 }
 
 .row {
@@ -33,6 +33,10 @@ body {
 
 .main {
   width: 870px;
+}
+
+.main + .aside {
+  margin-left: 30px;
 }
 
 .item-holder {
@@ -52,9 +56,92 @@ body {
 
 .aside {
   width: 270px;
+  min-width: 242px;
 }
 
 /*--X GLOBAL X--*/
+/*--- MENU ICON ---*/
+.menu-icon-wrapper {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  top: 15px;
+  left: 15px;
+  background-color: #d8d8d8;
+}
+
+.menu-icon-wrapper.scroll {
+  opacity: 50%;
+}
+
+.menu-icon-wrapper .menu-icon {
+  position: relative;
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.menu-icon-wrapper .menu-icon::before {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  content: '';
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+}
+
+.menu-icon-wrapper .menu-icon::after {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  content: '';
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  -webkit-transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s, -webkit-transform 0.2s ease-in;
+}
+
+.menu-icon-wrapper .menu-icon.menu-icon-active {
+  background-color: transparent;
+}
+
+.menu-icon-wrapper .menu-icon.menu-icon-active::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon-wrapper .menu-icon.menu-icon-active::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+  -webkit-transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, -webkit-transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
+}
+
+/*--- MENU ICON ---*/
 /*--- MAIN ---*/
 /*--- ITEM ---*/
 .item-link {
@@ -545,4 +632,57 @@ button.show-more > img {
 }
 
 /*--X ASIDE X--*/
+/*--- MEDIA ---*/
+@media (max-width: 1200px) {
+  .container {
+    width: 872px;
+  }
+}
+
+@media (max-width: 871px) {
+  .container {
+    width: 600px;
+  }
+  .menu-icon-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: 15px;
+    -webkit-box-shadow: 0px 0px 20px -1px #000000;
+            box-shadow: 0px 0px 20px -1px #000000;
+    overflow-y: scroll;
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .aside--mobile-active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media (max-width: 599px) {
+  .item-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  button.show-more {
+    width: 270px;
+  }
+}
+
+/*--X MEDIA X--*/
 /*# sourceMappingURL=style.css.map */
